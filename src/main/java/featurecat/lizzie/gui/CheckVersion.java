@@ -90,7 +90,7 @@ public class CheckVersion extends JDialog {
     txtpnhttpspanbaiducomsqghdfmnzbtyfcxa.setBackground(UIManager.getColor("Button.background"));
     txtpnhttpspanbaiducomsqghdfmnzbtyfcxa.setText(
         resourceBundle.getString("CheckVersion.download")
-            + " https://aistudio.baidu.com/aistudio/datasetdetail/116865"
+            + " https://aistudio.baidu.com/aistudio/datasetdetail/320751"
             + "\r\n"
             + resourceBundle.getString("CheckVersion.download2"));
     scrollPane_1.setViewportView(txtpnhttpspanbaiducomsqghdfmnzbtyfcxa);
@@ -109,7 +109,7 @@ public class CheckVersion extends JDialog {
           public void actionPerformed(ActionEvent e) {
             try {
               Desktop.getDesktop()
-                  .browse(new URI("https://aistudio.baidu.com/aistudio/datasetdetail/116865"));
+                  .browse(new URI("https://aistudio.baidu.com/aistudio/datasetdetail/320751"));
             } catch (IOException e1) {
               // TODO Auto-generated catch block
               e1.printStackTrace();
@@ -129,7 +129,7 @@ public class CheckVersion extends JDialog {
           public void actionPerformed(ActionEvent e) {
             try {
               Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-              Transferable transferableString = new StringSelection("246284327");
+              Transferable transferableString = new StringSelection("584641555");
               clipboard.setContents(transferableString, null);
               JOptionPane.showMessageDialog(
                   dialog, resourceBundle.getString("CheckVersion.copySuccess"));
@@ -148,7 +148,7 @@ public class CheckVersion extends JDialog {
         new ActionListener() {
           public void actionPerformed(ActionEvent e) {
             try {
-              Desktop.getDesktop().browse(new URI("https://github.com/yzyray/lizzieyzy/releases"));
+              Desktop.getDesktop().browse(new URI("https://github.com/FengmingGo/lizzieFM/"));
             } catch (IOException e1) {
               // TODO Auto-generated catch block
               e1.printStackTrace();

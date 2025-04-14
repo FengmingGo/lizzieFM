@@ -304,7 +304,7 @@ public class ContributeEngine {
       }
     } else {
       Lizzie.frame.addContributeLine(line, true);
-      if (line.contains("Finis")) {
+      if (line.contains("Finish")) {
         // 2021-11-02 09:21:45+0800: Finished game 8 (training), uploaded sgf
         // katago_contribute/kata1/sgfs/kata1-b40c256-s10312780288-d2513725330/155A1E55A4145135.sgf
         // and training data
@@ -354,9 +354,7 @@ public class ContributeEngine {
     if (line.contains("Starting game")) {
       setTip(Lizzie.resourceBundle.getString("Contribute.tips.startingNewGame")); // ("开始新的一局...");
     }
-    if (line.toLowerCase().contains("predownload")) {
-      setTip(Lizzie.resourceBundle.getString("Contribute.tips.predownload")); // ("预先下载权重中...");
-    } else if (line.toLowerCase().contains("download")) {
+    if (line.toLowerCase().contains("download")) {
       setTip(Lizzie.resourceBundle.getString("Contribute.tips.download")); // ("正在下载权重...");
     }
     if (line.contains("Invalid username/password")) {
@@ -369,16 +367,16 @@ public class ContributeEngine {
     }
     if (line.contains("No response from server")) {
       setTip(
-          Lizzie.resourceBundle.getString("Contribute.tips.noResponseFromServer")); // ("服务器无回应");
+          Lizzie.resourceBundle.getString("Contribute.tips.noResponseFromServer")); // ("服务器无回应，请检查网络（代理）");
       errorTips =
-          Lizzie.resourceBundle.getString("Contribute.tips.noResponseFromServer"); // //"服务器无回应";
+          Lizzie.resourceBundle.getString("Contribute.tips.noResponseFromServer"); // //"服务器无回应，请检查网络（代理）";
     }
     if (line.contains("Error connecting to server")) {
       setTip(
           Lizzie.resourceBundle.getString(
-              "Contribute.tips.errorConnectingToServer")); // ("服务器连接失败");
+              "Contribute.tips.errorConnectingToServer")); // ("服务器连接失败，请检查网络（代理）");
       errorTips =
-          Lizzie.resourceBundle.getString("Contribute.tips.errorConnectingToServer"); // "服务器连接失败";
+          Lizzie.resourceBundle.getString("Contribute.tips.errorConnectingToServer"); // "服务器连接失败，请检查网络（代理）";
     }
     if (line.contains(" When uploading")) {
       setTip(Lizzie.resourceBundle.getString("Contribute.tips.uploadError")); // ("上传数据出错,请查看控制台");
@@ -413,13 +411,21 @@ public class ContributeEngine {
           Lizzie.resourceBundle.getString(
               "Contribute.tips.modelFileWasIncompletelyDownloaded"); // 权重未完全下载";
     }
+    if (line.contains("CACHE_TENSORRT_PLAN")) {
+      setTip(
+          Lizzie.resourceBundle.getString(
+              "Contribute.tips.useOfficialEngineSupportDistributedTraining")); // ("不能使用plan cache版的TensorRT引擎跑谱");
+      errorTips =
+          Lizzie.resourceBundle.getString(
+              "Contribute.tips.useOfficialEngineSupportDistributedTraining"); // "不能使用plan cache版的TensorRT引擎跑谱";
+    }
     if (line.contains("Compile with -DBUILD_DISTRIBUTED")) {
       setTip(
           Lizzie.resourceBundle.getString(
-              "Contribute.tips.useOfficialEngineSupportDistributedTraining")); // ("请使用支持分布式训练的官方引擎");
+              "Contribute.tips.useOfficialEngineSupportDistributedTraining")); // ("请使用支持分布式训练的官方引擎，或从stable分支克隆编译的引擎");
       errorTips =
           Lizzie.resourceBundle.getString(
-              "Contribute.tips.useOfficialEngineSupportDistributedTraining"); // "请使用支持分布式训练的官方引擎";
+              "Contribute.tips.useOfficialEngineSupportDistributedTraining"); // "请使用支持分布式训练的官方引擎，或从stable分支克隆编译的引擎";
     }
     if (line.contains("not find CA certs")) {
       setTip(Lizzie.resourceBundle.getString("Contribute.tips.noCAcerts"));

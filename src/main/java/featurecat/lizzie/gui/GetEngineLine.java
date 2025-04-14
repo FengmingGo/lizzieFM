@@ -140,9 +140,9 @@ public class GetEngineLine {
                   resourceBundle.getString("MoreEngines.ikatagoPassWordTitle"),
                   JOptionPane.INFORMATION_MESSAGE);
           return enginePath
-              + " --platform "
+              + " -p "
               + (isColab ? "colab" : "all")
-              + " --username "
+              + " -u "
               + userName
               + " --password "
               + password;
