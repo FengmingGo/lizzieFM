@@ -1,3 +1,4 @@
+# 二次修改自lizzieyzy
 # LizzieYzy - 围棋引擎界面(中文,[English](#en),[日本語](https://github-com.translate.goog/yzyray/lizzieyzy/blob/main/README_EN.md?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_pto=wapp),[한국어](#ko))
 ![screenshot](/screenshot.png?raw=true)
 
