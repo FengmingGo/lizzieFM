@@ -1,5 +1,5 @@
 # 二次修改自lizzieyzy
-# LizzieYzy - 围棋引擎界面(中文,[English](#en),[日本語](https://github-com.translate.goog/yzyray/lizzieyzy/blob/main/README_EN.md?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_pto=wapp),[한국어](#ko))
+# LizzieYzy - 围棋引擎界面(中文,[English](#en),[日本語](https://github-com.translate.goog/FengmingGo/lizzieFM/blob/main/README_EN.md?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_pto=wapp),[한국어](#ko))
 ![screenshot](/screenshot.png?raw=true)
 
 LizzieYzy 是一个引擎界面,修改自[Lizzie](https://github.com/featurecat/lizzie),可加载围棋引擎:[Katago](https://github.com/lightvector/KataGo)、[LeelaZero](https://github.com/leela-zero/leela-zero)、[Leela](https://github.com/gcp/Leela)、[ZenGTP](https://github.com/yzyray/ZenGTP)、[SAI](http://sai.unich.it)、[Pachi](https://github.com/pasky/pachi)以及其他标准GTP引擎。
@@ -28,7 +28,7 @@ LizzieYzy 是一个引擎界面,修改自[Lizzie](https://github.com/featurecat/
 
   * **可视化KataGo分布式训练**: 将KataGo官方的分布式训练可视化,可以看到每一局正在进行和已经训练完成的对局
 #
- * [使用简介](https://github.com/yzyray/lizzieyzy/blob/main/readme_cn.pdf)
+ * [使用简介](https://github.com/FengmingGo/lizzieFM/blob/main/readme_cn.pdf)
  * 其他用到的jar代码链接: [foxRequestQ.jar](https://github.com/yzyray/FoxRequest) [InVisibleFrame.jar](https://github.com/yzyray/testbuffer) [CaptureTsumeGo.jar](https://github.com/yzyray/captureTsumeGo/blob/main/README.md)
 
 #
@@ -63,5 +63,5 @@ We have added some new features on Lizzie's basis: **Hawk Eye, Flash Analyze, Ba
   * **Visualized KataGo Distributed Training**: Visualized official KataGo training, all games(playing or completed) can be watched.
 
 #
- * Instruction for use: https://github.com/yzyray/lizzieyzy/blob/main/readme_en.pdf (If you are reading under translate to Japanese or Korean, please go to original link, translated link will not work)
+ * Instruction for use: https://github.com/FengmingGo/lizzieFM/blob/main/readme_en.pdf (If you are reading under translate to Japanese or Korean, please go to original link, translated link will not work)
  * Other jar source code links: [foxRequestQ.jar](https://github.com/yzyray/FoxRequest) [InVisibleFrame.jar](https://github.com/yzyray/testbuffer) [CaptureTsumeGo.jar](https://github.com/yzyray/captureTsumeGo/blob/main/README.md)

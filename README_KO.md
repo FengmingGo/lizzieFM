@@ -28,5 +28,5 @@ Lizzie 기반에 몇 가지 새로운 기능 추가: **Hawk Eye, Flash Analyze, 
   * **Visualized KataGo Distributed Training**: 시각화된 공식 KataGo 훈련. 모든 대국(진행중이거나 완료된)을 시청할 수 있습니다.
 
 #
- * [사용 지침(영문)](https://github.com/yzyray/lizzieyzy/blob/main/readme_en.pdf)
+ * [사용 지침(영문)](https://github.com/FengmingGo/lizzieFM/blob/main/readme_en.pdf)
  * 기타 jar 소스 코드 링크: [foxRequestQ.jar](https://github.com/yzyray/FoxRequest) [InVisibleFrame.jar](https://github.com/yzyray/testbuffer) [CaptureTsumeGo.jar](https://github.com/yzyray/captureTsumeGo/blob/main/README.md)
